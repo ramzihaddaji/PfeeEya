@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    flex-direction: column; /* Vertical par défaut */
+    align-items: stretch; /* S'étendre sur toute la largeur */
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 100%; /* Occupe toute la largeur de l'écran */
+    max-width: 300px; /* Largeur maximale pour la version verticale */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+.navbar a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #e9ecef;
+}
+
+.navbar a i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #4caf50;
+}
+
+.navbar a span {
+    display: inline; /* Toujours visible */
+}
+
+/* Styles réactifs pour écrans plus larges */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Toujours en colonne */
+        justify-content: flex-start; /* Alignement en haut */
+        max-width: 200px; /* Ajustement pour desktop */
+    }
+}

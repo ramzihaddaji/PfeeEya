@@ -1,0 +1,34 @@
+.mainn {
+    display: flex; /* Mise en page en flexbox */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    margin: 0; /* Supprime tout espace externe éventuel */
+    padding: 0; /* Supprime tout espace interne éventuel */
+  }
+  
+  .nav {
+    flex: 0 0 20%; /* La navigation occupe 20% de la largeur totale */
+    background-color: #f8f9fa; /* Couleur de fond */
+    padding: 0; /* Supprime tout espace interne */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
+  }
+  
+  .bodyy {
+    flex: 1; /* Prend tout l'espace restant */
+    background-color: #ffffff; /* Couleur de fond */
+    padding: 0; /* Supprime tout espace interne */
+    margin: 0; /* Supprime tout espace externe */
+    overflow: auto; /* Gère les débordements si le contenu dépasse */
+  }
+  
+
+  @media (max-width: 768px) {
+    .mainn {
+      flex-direction: column; /* Place les divs `nav` et `bodyy` en colonne */
+    }
+  
+    .nav {
+      flex: 0 0 auto; /* Laisse la navigation prendre sa hauteur naturelle */
+    }
+  }
+  
+  

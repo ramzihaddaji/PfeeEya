@@ -1,0 +1,70 @@
+/* Section Projects */
+.ftco-project {
+    padding: 2em 0; /* Réduire les espaces en haut et en bas */
+    color: #fff;
+}
+
+.project {
+    height: 200px; /* Réduire la hauteur */
+    min-height: 150px; /* Hauteur minimale réduite */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px; /* Moins d'espace entre les éléments */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    position: absolute;
+    bottom: 10px; /* Réduit l'espacement en bas */
+    left: 10px; /* Réduit l'espacement latéral */
+    color: #fff;
+    z-index: 2;
+    text-align: left;
+}
+
+
+
+.text h3 a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 40px; /* Taille plus petite */
+}
+
+.text h3 a:hover {
+    color: #fff;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .project {
+        height: 150px; /* Réduction pour mobile */
+        min-height: 100px; /* Ajustement pour les écrans plus petits */
+        margin-bottom: 15px;
+    }
+
+    .text h3 a {
+        font-size: 14px; /* Police plus petite pour mobile */
+    }
+}
