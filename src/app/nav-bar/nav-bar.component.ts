@@ -7,10 +7,15 @@ import { Component } from '@angular/core';
 })
 export class NavBarComponent {
 
-  isSidebarHidden = false;
+  isMenuOpen = false;
 
-  toggleSidebar() {
-    this.isSidebarHidden = !this.isSidebarHidden;
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
+  
 
 }

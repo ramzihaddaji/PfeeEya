@@ -1,6 +1,6 @@
 <div>
   <h1>{{ getTranslation('title') }}</h1>
-  <select [(ngModel)]="selectedLanguage">
+  <select [(ngModel)]="selectedLanguage" (change)="onLanguageChange($event)">
     <option value="ar">عربي</option>
     <option value="en">English</option>
     <option value="fr">Français</option>

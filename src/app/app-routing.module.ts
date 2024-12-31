@@ -7,6 +7,7 @@ import { Page2Component } from './page2/page2.component';
 import { HomeComponent } from './home/home.component';
 import { EnvironmentalSurTerreComponent } from './environmental-sur-terre/environmental-sur-terre.component';
 import { EnvironmentalEnAirComponent } from './environmental-en-air/environmental-en-air.component';
+import { EnvironmentalEnAirArComponent } from './environmental-en-air/environmental-en-air-ar/environmental-en-air-ar.component';
 
 const routes: Routes = [
   { path: 'environmental', component: EnvironmentalComponent },
@@ -14,6 +15,12 @@ const routes: Routes = [
   { path: 'environmentalEnAir', component: EnvironmentalEnAirComponent },
   { path: 'page2', component: Page2Component },
   { path: 'home', component: HomeComponent },
+
+  { path: 'ar', component: EnvironmentalEnAirArComponent },
+  { path: 'en', component: EnvironmentalSurTerreComponent },
+  { path: 'fr', component: EnvironmentalSurTerreComponent },
+
+
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 

@@ -1,0 +1,131 @@
+/* Navbar Styling */
+nav {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  /* Navbar List Layout */
+ul.nav-links {
+    display: flex;
+    list-style: none;
+    flex-direction: column; /* Align items vertically */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Menu Items */
+  ul.nav-links li {
+    margin: 20px 0; /* Ajoute un espace vertical entre les éléments */
+  }
+  
+  /* Links Styling */
+  ul.nav-links a {
+    color: black; /* Change to desired color */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Poppins", Arial, sans-serif;
+    transition: color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  ul.nav-links a:hover {
+    color: #a7a294; /* Yellow highlight on hover */
+    background-color: #e9ecef; /* Add background color on hover */
+  }
+  
+  
+  /* Menu Items */
+  
+  /* Navbar Container */
+  .navbar {
+    display: flex;
+    justify-content:center ;
+    flex-direction: column; /* Vertical par défaut */
+    align-items: flex-start; /* Aligner à gauche */
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Ajustement de la marge */
+    width: 100%; /* Occupe toute la largeur de l'écran */
+    max-width: 260px; /* Largeur maximale pour la version verticale */
+    height: 60vh; /* Prend toute la hauteur de la fenêtre */
+    position: fixed;
+    top: 10px; /* Petit espace en haut */
+    left: 10px; /* Petit espace à gauche */
+    z-index: 1000; /* Assure que la navbar reste en haut des autres éléments */
+    list-style: none;
+    border-bottom: 5px solid #000000;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      padding: 20px;
+    }
+  
+    .navbar li {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Links Styling */
+  a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Poppins", Arial, sans-serif;
+    transition: color 0.3s ease;
+    margin: 0; /* Supprimer les marges autour des liens */
+    padding: 10px 0; /* Ajouter du padding vertical pour les liens */
+  }
+  
+  /* Styles pour la version mobile */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: fixed;
+  }
+  
+  .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  @media (max-width: 768px) {
+    /* Cache la navbar par défaut et active seulement avec .active */
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      border-bottom: 5px solid #ffc107;
+    }
+  
+    /* Affiche le menu en version mobile */
+    .nav-links.active {
+      display: flex;
+    }
+  
+    /* Centre les liens du menu mobile */
+    .nav-links li {
+      margin: 0; /* Supprimer les marges autour des liens */
+      text-align: center;
+    }
+  
+    /* Affiche le menu-toggle pour les mobiles */
+    .menu-toggle {
+      display: flex;
+    }
+  }
+  

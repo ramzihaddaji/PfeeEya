@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { Page2Component } from './page2/page2.component';
 import { EnvironmentalSurTerreComponent } from './environmental-sur-terre/environmental-sur-terre.component';
 import { EnvironmentalEnAirComponent } from './environmental-en-air/environmental-en-air.component';
+import { EnvironmentalEnAirArComponent } from './environmental-en-air/environmental-en-air-ar/environmental-en-air-ar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { EnvironmentalEnAirComponent } from './environmental-en-air/environmenta
     HomeComponent,
     Page2Component,
     EnvironmentalSurTerreComponent,
-    EnvironmentalEnAirComponent
+    EnvironmentalEnAirComponent,
+    EnvironmentalEnAirArComponent
   ],
   imports: [
     BrowserModule,
