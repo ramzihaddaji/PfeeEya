@@ -20,7 +20,7 @@ export class EnvironmentalComponent implements OnChanges {
       description: 'استكشف أعماق البحار وتعرف على النظم البيئية تحت الماء.',
     },
     fr: {
-      title: 'Environnement Sous-marin',
+      title: 'Environnement Sous-Marin',
       description: 'Explorez les profondeurs de la mer et découvrez les écosystèmes sous-marins.',
     },
   };

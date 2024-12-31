@@ -46,16 +46,27 @@
 
 
 .text h3 a {
-    color: #000000;
+    font-weight: bolder;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 40px; /* Taille plus petite */
+    font-size: 60px; /* Taille plus petite */
 }
 
 .text h3 a:hover {
-    color: #fff;
+    color: #6A7BA2;
 }
 
+.h1T{
+    font-family: 'Times New Roman', serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+    color: #6A7BA2;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+}
 /* Mobile Styles */
 @media (max-width: 768px) {
     .project {

@@ -4,19 +4,25 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
-
-    color: #ffffff;
+    background-color: #FFDFDE;
     text-align: center;
 }
 
 
 .h1T{
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    color: #000000;
+    font-family: 'Times New Roman', serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+    color: #6A7BA2;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 30px;
+}
+
+.hh:hover{
+    color:#FFDFDE;
+    
 }
 
 /* Conteneur des cartes */
@@ -31,7 +37,7 @@
 
 /* Carte de membre de l'équipe */
 .team-card {
-
+    
     border-radius: 8px;
     padding: 30px 20px;
     width: 300px;

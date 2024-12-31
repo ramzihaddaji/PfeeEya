@@ -1,12 +1,12 @@
 <div>
-  <h1>{{ getTranslation('title') }}</h1>
-  <select [(ngModel)]="selectedLanguage" (change)="onLanguageChange($event)">
-    <option value="ar">عربي</option>
-    <option value="en">English</option>
-    <option value="fr">Français</option>
+  <h1 class="h1T">{{ getTranslation('title') }}</h1>
+  <select style="color: #6A7BA2;" [(ngModel)]="selectedLanguage" (change)="onLanguageChange($event)">
+    <option value="ar" style="color: #6A7BA2;">عربي</option>
+    <option value="en" style="color: #6A7BA2;">English</option>
+    <option value="fr" style="color: #6A7BA2;">Français</option>
   </select>
 
-  <p>{{ getTranslation('description') }}</p>
+  <p style="color: #6A7BA2;">{{ getTranslation('description') }}</p>
 
   <video width="600" controls>
     <source [src]="getVideoSource()" type="video/mp4">

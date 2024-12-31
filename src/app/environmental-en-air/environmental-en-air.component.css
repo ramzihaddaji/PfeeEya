@@ -26,14 +26,14 @@ body {
     overflow-y: auto; /* Ajout d'une barre de défilement si nécessaire */
   }
   
-  h1 {
-    font-size: 2rem;
-    color: #000000;
+  .h1T{
+    font-family: 'Times New Roman', serif;
+  font-size: 40px;
+  font-weight: bold;
+    color: #6A7BA2;
     text-align: center;
-    margin: 0;
-    padding-top: 20px;
-  }
-  
+    padding-top: 30px;
+}
   select {
     font-size: 1rem;
     padding: 10px;
