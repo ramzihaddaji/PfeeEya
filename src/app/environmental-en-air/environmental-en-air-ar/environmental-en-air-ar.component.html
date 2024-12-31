@@ -1,0 +1,16 @@
+<div>
+    <h1>{{ getTranslation('title') }}</h1>
+    <select [(ngModel)]="selectedLanguage">
+      <option value="ar">عربي</option>
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+    </select>
+  
+    <p>{{ getTranslation('description') }}</p>
+  
+    <video width="600" controls>
+      <source [src]="getVideoSource()" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
