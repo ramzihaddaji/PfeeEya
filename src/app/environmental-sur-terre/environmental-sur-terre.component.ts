@@ -29,11 +29,11 @@ export class EnvironmentalSurTerreComponent implements OnChanges {
     getVideoSource(): string {
       switch (this.selectedLanguage) {
         case 'ar':
-          return 'assets/assets/final.mp4';
+          return 'assets/final.mp4';
         case 'fr':
-          return 'assets/assets/final.mp4';
+          return 'assets/final.mp4';
         default:
-          return 'assets/assets/final.mp4';
+          return 'assets/final.mp4';
       }
     }
   
